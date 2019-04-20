@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GameLoop",
+            "request": "launch",
+            "mainClass": "textadventure.GameLoop",
+            "projectName": "TextAdventure_719a2235"
+        }
+    ]
+}
