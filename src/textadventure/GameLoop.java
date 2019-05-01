@@ -1,14 +1,12 @@
 package textadventure;
 import java.util.Scanner;
-import textadventure.Cat;
-
+import textadventure.Room;
 public class GameLoop{
 static boolean gamerunning = true;
     static int xcord = 0;
     static int ycord = 0;
     static Scanner input = new Scanner(System.in);
-    static Cat percy = new Cat();
-
+    public static Room introRoom;
 public static void main(String[] args) {
     // cd src, textadventure,GameLoop
     // javac GameLoop.java
@@ -16,9 +14,10 @@ public static void main(String[] args) {
     //System.out.println("What is your name?");
     //String name = input.nextLine();
     //System.out.println("Your name is " + name);
+    introRoom = new Room("yeet");
+    System.out.println(introRoom.roomDesc);
     gamerunning = true;
     while(gamerunning){
-        System.out.println(percy.numberOfPaws);
         System.out.println("What do you want to do?");
         handleAction();
             //gamerunning = false;
